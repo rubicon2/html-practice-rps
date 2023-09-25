@@ -30,20 +30,46 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-ul, ol {
-    list-style: none;
-}
-
-li {
-
-}
-
 a {
     color: var(--text-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* || Utilities */
+
+.no-bullets {
+    list-style: none;
+}
+
+/* || Site top bar styles */
+
+.guides-bar {
+    background-color: var(--purple);
+    display: block;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.guides-bar-list {
+    color: white;
+}
+
+.guides-bar-list li {
+    display: inline-flex;
+    position: relative;
+}
+
+.guides-bar-list li:not(:last-of-type)::after {
+    color: white;
+    content: '|';
+    margin: auto;
+}
+
+.guides-bar-list a {
+    padding: 8px;
+}
