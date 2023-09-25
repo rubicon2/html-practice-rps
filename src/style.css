@@ -18,16 +18,20 @@
 
 :root {
     box-sizing: border-box;
+
     --primary-text: #15141a;
     --secondary-text: #5b5b66;
     --purple: #44208d;
     --green: #00866b;
     --dark-grey: #3d434a;
+    --grey: #d0d0d0;
     --light-grey: #f0f0f4;
 
     font-family: "noto-sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
 
+    --logo-width: 220px;
+    --logo-height: 146px;
 }
 
 *, *::before, *::after {
@@ -96,4 +100,30 @@ a:hover {
 
 .guides-bar-list a {
     padding: 8px;
+}
+
+/* Main nav bar */
+
+.nav-background {
+    border-bottom: 1px solid var(--grey);
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    width: 70%;
+    margin: 0 auto;
+
+    padding: 2rem;
+}
+
+.nav-main-logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+}
+
+.nav-main-links {
+    font-weight: bold;
 }
