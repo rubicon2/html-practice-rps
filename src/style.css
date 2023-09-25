@@ -2,7 +2,12 @@
 
 :root {
     box-sizing: border-box;
-    --text-color: rgb(20, 20, 20);
+    --primary-text: #15141a;
+    --secondary-text: #5b5b66;
+    --purple: #44208d;
+    --green: #00866b;
+    --dark-grey: #3d434a;
+    --light-grey: #f0f0f4;
 }
 
 *, *::before, *::after {
