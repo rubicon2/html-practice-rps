@@ -63,7 +63,40 @@ function createNavMain(parent) {
     secondaryLinks.classList.add('no-bullets');
 
     // support, join newsletter, visit store
+    let buttonLinks = document.createElement('div');
+    buttonLinks.classList.add('nav-buttons');
+    navMain.appendChild(buttonLinks);
+
+    let supportButton = document.createElement('button');
+    supportButton.classList.add('nav-button', 'purple-button');
+    supportButton.innerText = 'Support us';
+    buttonLinks.appendChild(supportButton);
+
+    let newsletterButton = document.createElement('button');
+    newsletterButton.classList.add('nav-button', 'green-button');
+    newsletterButton.innerText = 'Join our newsletter';
+    buttonLinks.appendChild(newsletterButton);
+
+    let storeButton = document.createElement('button');
+    storeButton.classList.add('nav-button', 'green-button');
+    storeButton.innerText = 'Visit our store';
+    buttonLinks.appendChild(storeButton);
+
     // search bar, sign in/create account
+    let searchSection = document.createElement('div');
+    searchSection.classList.add('search-section');
+    navMain.appendChild(searchSection);
+
+    let searchInput = document.createElement('input');
+    searchInput.classList.add('search-input');
+    searchInput.type = 'text';
+    searchInput.placeholder = 'Search';
+    searchSection.appendChild(searchInput);
+
+    let accountButton = document.createElement('button');
+    accountButton.classList.add('account-button', 'green-button');
+    accountButton.innerText = 'Sign in/Create account';
+    searchSection.appendChild(accountButton);
 }
 
 function createHeader(parent) {
